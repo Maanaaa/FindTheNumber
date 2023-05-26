@@ -1,17 +1,14 @@
 package fr.mana;
 
+import fr.mana.utils.loading.*;
+import fr.mana.utils.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Main extends JavaPlugin {
 
-    @Override
-    public void onEnable() {
-        // Plugin startup logic
-
-    }
+    PluginInitializer pluginInitializer = new PluginInitializer(this);
 
     @Override
-    public void onDisable() {
-        // Plugin shutdown logic
-    }
+    public void onEnable() {pluginInitializer.register();}
+
 }

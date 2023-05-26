@@ -1,0 +1,32 @@
+findthenumberConfig:
+  prefix: "&7&l[&6Find The Number&7&l]" #Plugin prefix
+  messages:
+    broadcasts:
+      firstBroadcast: #Broadcast who announce the event
+        # use dash to create a new line
+        - "&7&n                             "
+        - " "
+        - " "
+        - " "
+        - "    &e&l⚡ &b&lPLAY.TERRACRAFT.FR &e&l⚡ "
+        - " "
+        - "&7➤ &b&lFind the number event !"
+        - " "
+        # Numbers %firstNumber% and %secondNumber% are differents according to online players number
+        - "&6&llFind the number between %firstNumber% and %secondNumber%. The first person to discover it will be crowned the"
+        - "&6&lultimate champion!"
+        - " "
+        - "&6&k!! &7&lGood lucks ! &6&k!!"
+        - " "
+      winningBroadast: # Broadcasted when a player has finded the number
+        # use dash to create a new line
+        - "&7&n                             "
+        - " "
+        - " "
+        - " "
+        - "    &e&l⚡ &b&lFind The Number Event &e&l⚡ "
+        - " "
+        - " &6&lThe player &7%winner% &6&lhad finded the number,"
+        - " &6&lcongrulations to him !"
+        - " "
+        - "     &c&l❤ &b&lTERRACRAFT.FR &c&l❤  "
