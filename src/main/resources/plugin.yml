@@ -1,0 +1,4 @@
+name: FTN
+version: '${project.version}'
+main: fr.mana.ftn.FTN
+api-version: 1.19
