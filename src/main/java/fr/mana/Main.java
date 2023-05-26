@@ -1,8 +1,8 @@
-package fr.mana.ftn;
+package fr.mana;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class FTN extends JavaPlugin {
+public final class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
