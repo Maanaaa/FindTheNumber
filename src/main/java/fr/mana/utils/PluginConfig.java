@@ -16,15 +16,29 @@ public class PluginConfig {
     }
 
     public void plugin(){
+
+        // Plugin prefix
         String prefix = Objects.requireNonNull(main.getConfig().getString("findthenumberConfig.prefix")).replace("&","§");
+
+        // Time between the events in minutes
+        Integer eventsDelay = (Integer) main.getConfig().getInt("findthenumberConfig.delay");
     }
+
     public void broadcasts(){
-        // First broadcast
+
+        // [First broadcast]
         // It is essential to implement a loop to retrieve all broadcast lines when implementing the object
         StringList firstBroadcast = (StringList) main.getConfig().getStringList("findthenumberConfig.messages.broadcasts.firstBroadcast");
-        // Second broadcast
+
+        // [Second broadcast]
         // It is essential to implement a loop to retrieve all broadcast lines when implementing the object
         StringList winningBroadast = (StringList) main.getConfig().getStringList("findthenumberConfig.messages.broadcasts.winningBroadast");
+
     }
+
+    public void playerMessages(){
+
+    }
+
 
 }

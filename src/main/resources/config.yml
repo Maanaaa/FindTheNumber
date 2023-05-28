@@ -1,5 +1,40 @@
+#
+#
+#
+# Plugin:
+# This Plugin was created for the Minecraft Server TerraCraft (play.terracraft.fr)
+# The goal is to propose a complete and fully editable plugin working on the lasts versions of Minecraft
+# Concept: every time you set, a random number (you can desactivate this option) is generated, players haves to find the number,
+# the first player who find the random number is the winner of the event, you can add/edit rewards
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+
+
+
+
+#---------------------------------------------------------------------------------
+
+
+
 findthenumberConfig:
   prefix: "&7&l[&6Find The Number&7&l]" #Plugin prefix
+  delay: 60 #Time in minutes between to events
   messages:
     broadcasts:
       firstBroadcast: #Broadcast who announce the event

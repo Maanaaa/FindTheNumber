@@ -2,3 +2,7 @@ name: FTN
 version: '${project.version}'
 main: fr.mana.Main
 api-version: 1.19
+commands:
+  ftn: # Commmand for staff only
+    description: Main command of Find The Number plugin
+    permission: ftn.use
