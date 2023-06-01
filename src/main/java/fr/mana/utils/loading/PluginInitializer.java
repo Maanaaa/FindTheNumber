@@ -2,6 +2,7 @@ package fr.mana.utils.loading;
 
 import fr.mana.*;
 import fr.mana.commands.*;
+import fr.mana.commands.configuration.*;
 import fr.mana.commands.utils.*;
 import fr.mana.utils.*;
 
@@ -26,16 +27,19 @@ public class PluginInitializer {
         System.out.println(" ");
         System.out.println(" ");
         //--------------------
+
         PluginConfig pluginConfig = new PluginConfig(main);
 
         // Register commands
         this.commands();
+
 
     }
 
     public void commands(){
         Objects.requireNonNull(this.main.getCommand("ftn")).setExecutor(new Reload(main));
         Objects.requireNonNull(this.main.getCommand("ftn")).setExecutor(new FTN(main));
+        Objects.requireNonNull(this.main.getCommand("ftn")).setExecutor(new Status(main));
     }
 
 }

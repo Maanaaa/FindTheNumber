@@ -35,6 +35,7 @@
 findthenumberConfig:
   prefix: "&7&l[&6Find The Number&7&l]" #Plugin prefix
   delay: 60 #Time in minutes between to events
+  enable: true # Type "true" if you want to enable the event else type "false", or use the "/ftn start" and "/ftn stop" commands
   messages:
     broadcasts:
       firstBroadcast: #Broadcast who announce the event

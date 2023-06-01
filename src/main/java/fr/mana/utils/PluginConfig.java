@@ -15,30 +15,57 @@ public class PluginConfig {
         main.saveDefaultConfig();
     }
 
-    public void plugin(){
 
-        // Plugin prefix
-        String prefix = Objects.requireNonNull(main.getConfig().getString("findthenumberConfig.prefix")).replace("&","§");
+    //----------------------
+    //
+    // PLUGIN CONFIGURATION
+    //
+    //----------------------
 
-        // Time between the events in minutes
-        Integer eventsDelay = (Integer) main.getConfig().getInt("findthenumberConfig.delay");
+
+    // Plugin prefix
+    public String prefix(){
+        return Objects.requireNonNull(main.getConfig().getString("findthenumberConfig.prefix")).replace("&","§");
     }
 
-    public void broadcasts(){
-
-        // [First broadcast]
-        // It is essential to implement a loop to retrieve all broadcast lines when implementing the object
-        StringList firstBroadcast = (StringList) main.getConfig().getStringList("findthenumberConfig.messages.broadcasts.firstBroadcast");
-
-        // [Second broadcast]
-        // It is essential to implement a loop to retrieve all broadcast lines when implementing the object
-        StringList winningBroadast = (StringList) main.getConfig().getStringList("findthenumberConfig.messages.broadcasts.winningBroadast");
-
+    // Time between the events in minutes
+    public Integer eventsDelay(){
+        return (Integer) main.getConfig().getInt("findthenumberConfig.delay");
     }
 
-    public void playerMessages(){
-
+    // Event enable or not
+    public Boolean status(){
+        return (Boolean) main.getConfig().getBoolean("findthenumberConfig.enable");
     }
+
+
+
+    //----------------------
+    //
+    // EVENT BROADCASTS
+    //
+    //----------------------
+
+    // [First broadcast]
+    // It is essential to implement a loop to retrieve all broadcast lines when implementing the object
+    public StringList firstBrodcast(){
+        return (StringList) main.getConfig().getStringList("findthenumberConfig.messages.broadcasts.firstBroadcast");
+    }
+
+    // [Second broadcast]
+    // It is essential to implement a loop to retrieve all broadcast lines when implementing the object
+    public StringList winningBroadcast(){
+        return (StringList) main.getConfig().getStringList("findthenumberConfig.messages.broadcasts.winningBroadast");
+    }
+
+
+    //----------------------
+    //
+    // MESSAGES TO PLAYER
+    //
+    //----------------------
+
+
 
 
 }
